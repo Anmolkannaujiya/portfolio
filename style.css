@@ -12,36 +12,104 @@
 html{
     font-size: 62.5%;
 }
-.navbar{
+/* .navbar{
     font-family: "Nabla", system-ui;
-}
+} */
 body{
     font-family: "Science Gothic", sans-serif;
+    background-color: #0A192F;
 }
 
 /*######################### utility classes ########################*/
+
+/*color scheme : 
+ Background: #0A192F (dark navy blue)
+ Accent: #64FFDA (mint/teal)
+ Headline Text: #CCD6F6 (light bluish white)
+ Subtext: #8892B0 (gray-blue)
+ Hover/Buttons: #112240 (darker navy)
+*/
+
 /*########### super container ##########################*/
 
 .super-container{
     display: flex;
     justify-content: space-between;
     height: 100vh;
-    width: 100vw;
-
+    /* padding: 1rem 1rem; */
 }   
+.super-container{
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    border: 2px solid blue;
+}
+
+/* ############################ main ########################### */
+
+.main{
+    border: 2px solid black;
+    width: 1000px;
+    background-color: #7da0d3;
+    margin: 1rem 1rem;
+    border-radius: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* ##################### nav bar ############################*/
 /*desktop hamburger*/
-.hamburger-lines{
+.navbar .hamburger-lines, .navbar input[type="checkbox"]{
     display: none;
+}
+
+.navbar .navbar-icons{
+    list-style: none;
+    margin-left: 1.5rem;
 }
 .navbar-container{
     display: flex;
     justify-content: space-between;
+    font-size: 1.8rem;
+    border: 2px solid orange;
+    width: 100%;
+    border-top-left-radius: 7rem;
+    border-top-right-radius: 7rem;
+   
 }
+
 
 .navbar-icons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
 }
 /* ######################### aside(sidebar) section ####################*/
+.sidebar{
+    border: 2px solid red;
+    margin: 1rem 1rem;
+    border-radius: 7rem;
+}
+.sidebar{
+    width: 400px;
+    background-color: #7da0d3;
+    color: #fff;
+}
+
+/* ############################# section ################################### */
+.section{
+    border: 2px solid white;
+    /* margin: 1em; */
+    /* padding-bottom: 100%; */
+    /* text-align: center; */
+    padding: 1.8em 1.8em;
+    flex: 1;
+    border-bottom-left-radius: 7rem;
+    border-bottom-right-radius: 7rem;
+}
+
+/* ############################ about me ####################################### */
